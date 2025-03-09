@@ -1,0 +1,33 @@
+/* Hide the checkbox */
+.toggle-checkbox {
+    display: none;
+}
+
+/* Button styling */
+.toggle-button {
+    background: #333;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Initially hide the menu */
+.menu {
+    display: none;
+    background: lightgray;
+    padding: 10px;
+}
+
+/* Show menu when checkbox is checked */
+.toggle-checkbox:checked ~ .menu {
+    display: block;
+    z-index: 999;
+}
+
+/* Hide the section by default on mobile */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+}

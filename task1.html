@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task1</title>
+    <link rel="stylesheet" href="task1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav-log">
+          <img style="height: 7vh" src="Assets/asset-tracker-logo.svg" alt="" />
+          <h3 style="height: 10vh">Asset Tracker</h3>
+        </div>
+        <div class="nav-search">
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="search asset and employee"
+          />
+        </div>
+      </nav>
+      <div class="nav-p">
+        <div>
+            <button onclick=showSidebar() class="test" type="button">☰</button>
+          </div>    
+        <div class="nav-log-p">
+          <img
+            style="height: 7vh; margin: 1vh 0 0 9vw"
+            src="Assets/asset-tracker-logo.svg"
+            alt=""
+          />
+          <h3 style="height: 6vh">Asset Tracker</h3>
+        </div>
+      </div>
+      <div class="main">
+        <div class="menu">
+          <h4 class="text">MAIN MANU</h4>
+          <ul>
+            <li>
+              <a href="#text">
+                <img class="icon" src="Assets/list.png" alt="" />
+                Overview</a
+              >
+            </li>
+            <li>
+              <a href="#text">
+                <img class="icon" src="Assets/save-money.png" alt="" />Asset
+              </a>
+            </li>
+            <li>
+              <a href="#contact"
+                ><img
+                  class="icon"
+                  src="Assets/employee.png"
+                  alt=""
+                />Employees</a
+              >
+            </li>
+            <li>
+              <a href="#about"
+                ><img class="icon" src="Assets/note.png" alt="" />Request</a
+              >
+            </li>
+          </ul>
+          <h4 class="text">MANAGMENT</h4>
+          <ul>
+            <li>
+              <a href="#home">
+                <img
+                  class="icon"
+                  src="Assets/online-shopping.png"
+                  alt=""
+                />Invantory</a
+              >
+            </li>
+            <li>
+              <a href="#news">
+                <img class="icon" src="Assets/user.png" alt="" />Assingment</a
+              >
+            </li>
+            <li>
+              <a href="#contact">
+                <img
+                  class="icon"
+                  src="Assets/maintanace.png"
+                  alt=""
+                />Maintenance</a
+              >
+            </li>
+          </ul>
+          <h4 class="text">SYSTEM</h4>
+          <ul>
+            <li>
+              <a href="#home"
+                ><img class="icon" src="Assets/report.png" alt="" /> Report</a
+              >
+            </li>
+            <li>
+              <a href="#news">
+                <img
+                  class="icon"
+                  src="Assets/maintanace.png"
+                  alt=""
+                />Settings</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="menu-p">
+          <div class="btn-div">
+            <button onclick=hideSidebar() class="btn-p" class="test" type="button">☰</button>
+          </div>   
+          <h4 class="text">MAIN MANU</h4>
+            
+            <ul class="ul">
+              <li>
+                <a class="menu-item" href="#text">
+                  <img class="icon" src="Assets/list.png" alt="" />Overview
+                </a>
+              </li>
+              <li>
+                <a class="menu-item" href="#text">
+                  <img class="icon" src="Assets/save-money.png" alt="" />Asset
+                </a>
+              </li>
+              <li>
+                <a class="menu-item" href="#contact"
+                  ><img
+                    class="icon"
+                    src="Assets/employee.png"
+                    alt=""
+                  />Employees</a
+                >
+              </li>
+              <li>
+                <a class="menu-item" href="#about"
+                  ><img class="icon" src="Assets/note.png" alt="" />Request</a
+                >
+              </li>
+            </ul>
+            <h4 class="text">MANAGMENT</h4>
+            <ul>
+              <li>
+                <a class="menu-item" href="#home">
+                  <img
+                    class="icon"
+                    src="Assets/online-shopping.png"
+                    alt=""
+                  />Invantory</a
+                >
+              </li>
+              <li>
+                <a class="menu-item" href="#news">
+                  <img class="icon" src="Assets/user.png" alt="" />Assingment</a
+                >
+              </li>
+              <li>
+                <a class="menu-item" href="#contact">
+                  <img
+                    class="icon"
+                    src="Assets/maintanace.png"
+                    alt=""
+                  />Maintenance</a
+                >
+              </li>
+            </ul>
+            <h4 class="text">SYSTEM</h4>
+            <ul>
+              <li>
+                <a class="menu-item" href="#home"
+                  ><img class="icon" src="Assets/report.png" alt="" /> Report</a
+                >
+              </li>
+              <li>
+                <a class="menu-item" href="#news">
+                  <img
+                    class="icon"
+                    src="Assets/maintanace.png"
+                    alt=""
+                  />Settings</a
+                >
+              </li>
+            </ul>
+          </div>
+        <div class="contant">
+          <div class="first">
+            <h1>Dashboard Overview</h1>
+            <div>
+              <button type="button">+ New Asset</button>
+            </div>
+          </div>
+
+          <div class="submain">
+            <div class="total">
+              <img class="img1" src="Assets/coin.png" alt="" />
+              <div>
+                <h3 style="margin-bottom: 0">123</h3>
+                <p style="margin-top: 0; color: #888">Total Assets</p>
+              </div>
+            </div>
+            <div class="all">
+              <img class="img1" src="Assets/multiple-users-silhouette.png" alt="" />
+              <div>
+                <h3 style="margin-bottom: 0">123</h3>
+                <p style="margin-top: 0; color: #888">assigned Assets</p>
+              </div>
+            </div>
+            <div class="panding">
+              <img class="img1" src="Assets/history.png" alt="" />
+              <div>
+                <h3 style="margin-bottom: 0">123</h3>
+                <p style="margin-top: 0; color: #888">Panding Requests</p>
+              </div>
+            </div>
+            <div class="maintan">
+              <img class="img1" src="Assets/warning.png" alt="" />
+              <div>
+                <h3 style="margin-bottom: 0">123</h3>
+                <p style="margin-top: 0; color: #888">Maintenance Needed</p>
+              </div>
+            </div>
+          </div>
+          <div class="submain-p">
+            <div class="card">
+              <img class="img1" src="Assets/coin.png" alt="" />
+              <div>
+                <h3 style="margin-bottom: 0">123</h3>
+                <p style="margin-top: 0; color: #888">Total Assets</p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="img1" src="Assets/multiple-users-silhouette.png" alt="" />
+              <div>
+                <h3 style="margin-bottom: 0">123</h3>
+                <p style="margin-top: 0; color: #888">assigned Assets</p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="img1" src="Assets/history.png" alt="" />
+              <div>
+                <h3 style="margin-bottom: 0">123</h3>
+                <p style="margin-top: 0; color: #888">Panding Requests</p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="img1" src="Assets/warning.png" alt="" />
+              <div>
+                <h3 style="margin-bottom: 0">123</h3>
+                <p style="margin-top: 0; color: #888">Maintenance Needed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.menu-p')
+        sidebar.style.display= 'flex'
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.menu-p')
+        sidebar.style.display= 'none'
+      }
+    </script>
+  </body>
+</html>
